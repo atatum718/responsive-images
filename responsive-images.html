@@ -4,15 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="responsive-images.css" />
   </head>
   <body>
-    <section class="hero">
+    <header class="header">
       <div class="hero-pic-container">
-        <picture class="hero-pic">
-          <source srcset="cat-images\hero-small.jpg" media="max-width:480px" />
-          <source srcset="cat-images\hero-big.jpg" media="max-width:768" />
-          <img srcset="cat-images\hero-big.jpg" />
+        <picture class="hero">
+          <source srcset="cat-images\hero-big.jpg" media="min-width:500" />
+          <source srcset="cat-images\hero-small.jpg" media="min-width:320px" />
+          <img srcset="cat-images\hero-small.jpg" />
         </picture>
+      </div>
+
+      <div class="profile-pic-container">
+        <img class="profile" src="cat-images\profile.png" />
+      </div>
+      <h3>Garfield</h3>
+    </header>
+
+    <section class="main">
+      <div class="cat-1 gallery-img">
+        <img src="cat-images/cat-1.jpg" />
+      </div>
+      <div class="cat-2 gallery-img">
+        <img src="cat-images/cat-2.jpg" />
+      </div>
+      <div class="cat-3 gallery-img">
+        <img src="cat-images/cat-3.jpg" />
       </div>
     </section>
   </body>
